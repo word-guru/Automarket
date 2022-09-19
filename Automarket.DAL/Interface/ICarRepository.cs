@@ -9,6 +9,6 @@ namespace Automarket.DAL.Interface
 {
     public interface ICarRepository : IBaseRepository<Cars>
     {
-        Cars GetByName(string name);
+        Task<Cars> GetByName(string name);
     }
 }
