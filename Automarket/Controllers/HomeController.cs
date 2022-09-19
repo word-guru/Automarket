@@ -1,4 +1,5 @@
 ﻿using Automarket.DAL;
+using Automarket.DAL.Interface;
 using Automarket.Domain.Models;
 using Automarket.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -8,23 +9,21 @@ namespace Automarket.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-       
+        //private readonly ILogger<HomeController> _logger;
+        private readonly ICarRepository _carRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ICarRepository carRepository)
         {
-            _logger = logger;
+           // _logger = logger;
+           _carRepository = carRepository;
           
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            Cars car = new Cars()
-            {
-                Name = "Alex",
-                Speed = 320
-            };
-            return View(car);
+            var response = await _carRepository.Select();
+
+            return View();
         }
 
         public IActionResult Privacy()
