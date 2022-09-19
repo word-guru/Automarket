@@ -1,4 +1,5 @@
-﻿using Automarket.Domain.Models;
+﻿using Automarket.DAL;
+using Automarket.Domain.Models;
 using Automarket.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -8,10 +9,12 @@ namespace Automarket.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+       
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+          
         }
 
         public IActionResult Index()
@@ -21,7 +24,7 @@ namespace Automarket.Controllers
                 Name = "Alex",
                 Speed = 320
             };
-            return View();
+            return View(car);
         }
 
         public IActionResult Privacy()
