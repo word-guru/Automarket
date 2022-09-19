@@ -12,6 +12,7 @@ namespace Automarket.Controllers
         {
             _carRepository = carRepository;
         }
+
         [HttpGet]
         public async Task<IActionResult> GetCarsAsync()
         {
