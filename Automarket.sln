@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32804.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket", "Automarket\Automarket.csproj", "{3F139AEF-D2EA-41BA-9D12-713CD23F36C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automarket", "Automarket\Automarket.csproj", "{3F139AEF-D2EA-41BA-9D12-713CD23F36C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F216265C-0D66-4746-8ADF-82B79383A1E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.Domain", "Automarket.Domain\Automarket.Domain.csproj", "{18F38445-C89E-47F8-8D55-CCB9BC9100A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automarket.Domain", "Automarket.Domain\Automarket.Domain.csproj", "{18F38445-C89E-47F8-8D55-CCB9BC9100A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{A9898D4E-E683-43D3-96E3-F2BD01F8F424}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.DAL", "Automarket.DAL\Automarket.DAL.csproj", "{B0EFBBA4-C8BA-4858-BE88-A8EC7D537E9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automarket.DAL", "Automarket.DAL\Automarket.DAL.csproj", "{B0EFBBA4-C8BA-4858-BE88-A8EC7D537E9D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{A98EBB44-85C4-43A8-A889-B301E7C483FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.Service", "Automarket.Service\Automarket.Service.csproj", "{07FF2006-FF54-4901-A4C4-19246BD62455}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automarket.Service", "Automarket.Service\Automarket.Service.csproj", "{07FF2006-FF54-4901-A4C4-19246BD62455}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
